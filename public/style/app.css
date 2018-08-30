@@ -1,0 +1,50 @@
+/* app.css created by Kevin*/
+html{ height: 100%; background-color: #fff; }
+html,body{  font-family: Helvetica,PingFang Sc,sans-serif; }
+body{ position: relative; min-height: 100%;}
+.weui-cell:before{ border-top: 1px solid #c3c3c3 !important; }
+.weui-icon_msg.weui-icon-warn{ color: #fff !important; }
+input::-webkit-input-placeholder{ color: #8e8e8e;}
+
+ /*flexbox layout css*/
+.app-flex{ display: -webkit-box; display: -webkit-flex; display: flex; }
+.app-flex-y{ -webkit-box-orient: vertical; -webkit-flex-direction:  column; }
+.app-hrizontal-center{ -webkit-box-pack: center; justify-content: center; }
+.app-vertical-center{ -webkit-box-align:  center; -webkit-align-items:  center; align-items: center; }
+.app-content-justify{ -webkit-box-pack: justify; -webkit-justify-content: space-between; justify-content: space-between }
+.app-basis{ -webkit-box-flex:  1; -webkit-flex:  1; flex:  1; }
+.app-basis2{ -webkit-box-flex:  2; -webkit-flex: 2; flex:  2; }
+::-webkit-scrollbar{ display: none; width: 0; }
+.app-container{ position:absolute; left: 0; right: 0; height: 100%;}
+
+/*form css*/
+.form-container{ padding: 1rem 2.5rem; }
+.form-container .input-cell{ margin: 1rem 0; }
+.form-container .input-cell label{ display: block; width: 2.85rem; font-size: 0.7rem; color: #595959; }
+.form-container .input-cell .input-control{ padding: 0.5rem; border: 0.5px solid #b7b7b7; border-radius: 5px; }
+.form-container .input-cell input{ position: relative; display: block; width: 100%; height: 100%; font-size: 0.7rem; color: #595959;  }
+.form-container .input-cell select{ display: block; -webkit-appearance: none; margin-left: 0 !important; width: 100%; border: 0; outline: none; background: url(../assets/dwn.png) no-repeat right center; background-size: 0.4rem auto; }
+.form-container .input-cell .send-code-btn{ position: relative; margin-left: 0.75rem; height: 1.9rem; line-height: 1.9rem; width: 5rem; background-color: #398c9f; font-size: 0.75rem; color: #fff; border-radius: 5px; text-align: center; pointer-events: auto; box-sizing: border-box; }
+.form-container .input-cell .send-code-btn.disabled{ background: #ddd; pointer-events: none; }
+.app-btn{ margin: 2.25rem auto 0.5rem auto; height: 2.25rem; line-height: 2.25rem; border-radius: 5px; background-color: #398c9f; color: #fff; text-align: center; }
+.has-accout{ text-align: center; }
+.has-accout a,
+.forgot-pwd a{ font-size: 0.6rem; color: #8e8e8e; }
+.forgot-pwd{ margin-bottom: 1rem; }
+.forgot-pwd{ text-align: center; }
+.case-list{ padding-bottom: 4.5rem; }
+.case-item a{ padding: 0.8rem 0; font-size: 0.7rem; border-bottom: 0.5px solid #b7b7b7; }
+.case-item h4{ margin-right: 0.5rem; font-size: 0.65rem; white-space: nowrap; text-align: center; overflow: hidden; text-overflow: ellipsis; }
+.case-item h5{ font-size: 0.6rem; text-align: center; }
+/*case css*/
+.case-hd{ padding: 0.5rem 0; background: #fff; font-size: 0.8rem; color: #398c9f; text-align: center; border-bottom: 2px solid #e1e1e1; }
+.case-info{ padding: 1rem; font-size: 0.7rem; color: #595959; }
+.case-info .case-wrap:last-child{ border-bottom: 0; }
+.case-info .case-wrap{ padding: 0.65rem 0; border-bottom: 0.5px solid #b7b7b7; line-height: 1.5rem; }
+.case-info .case-wrap img{ display: block; margin: 0 auto; max-width: 100%; width: auto; height: auto; }
+.logout-btn{ position: fixed; bottom: 0; left: 0; right: 0; height: 4rem; background: #fff; }
+.logout-btn a{ display: block; margin: 0 auto; width: 12rem; height: 2rem; font-size: 0.85rem; line-height: 2rem; text-align: center; border-radius: 5px; color: #fff; background: #398c9f;  }
+
+/*load more*/
+.layui-flow-more{ margin: 0 !important; padding: 0.5rem 0 !important;}
+.layui-flow-more a cite{ padding: 0 0.5rem !important; background: transparent !important;}

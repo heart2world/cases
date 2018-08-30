@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>案件详情</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="案件查询">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="renderer" content="webkit">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="keywords" content="案件查询系统">
+	<meta name="description" content="案件查询系统">
+	<link rel="stylesheet" href="__PUBLIC__/style/base.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/style/app.css">
+	<script src="__PUBLIC__/libs/jq.min.js"></script>
+	<script src="__PUBLIC__/libs/v.min.js"></script>
+</head>
+<body>
+	<!--案件详情-->
+	<section class="case-info" style="padding-top: 0px;">
+		<section class="case-wrap">
+			<div class="case-mititle">案件名称：&nbsp;{$info.casename}</div>
+			<div class="case-mititle">责任律师：&nbsp;{$info.layer}</div>
+			<div class="case-mititle">案件描述：&nbsp;</div>
+			<div class="case-text">
+				{$info.casedesc}
+			</div>
+			<div class="case-title">创建时间：&nbsp;{$info.addtime|date='Y-m-d H:i',###}</div>
+		</section>
+		<volist name="cases" id="va">
+		<section class="case-wrap">
+			<div class="case-mititle">最新进展：&nbsp;</div>
+			<div class="case-text">
+				{$va.desc}
+			</div>
+			<div class="case-title">更新时间：&nbsp;{$va.addtime|date='Y-m-d H:i',###}</div>
+		</section>
+		</volist>
+	</section>
+</body>
+<script src="__PUBLIC__/libs/fixed.js"></script>
+</html>

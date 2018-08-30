@@ -1,0 +1,6 @@
+[ 2018-02-01T16:22:36+08:00 ] 106.11.224.61 /index.php?m=member&c=index&a=register&siteid=1
+ERR: 无法加载控制器:Member
+
+[ 2018-02-01T16:24:32+08:00 ] 106.11.224.104 /index.php?m=wap&a=index&siteid=1
+ERR: 无法加载控制器:Wap
+
